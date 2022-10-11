@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 0.3rem;
+    font-weight: 400;
+    margin: 0.2rem 0;
+  }
+
+  table {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 0.15rem;
+    font-weight: normal;
+  }
+
+  [v-cloak] {
+    /* 元素隐藏    */
+    display: none;
+  }
+

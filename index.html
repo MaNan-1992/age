@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <title>年龄分布表</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1>80、90后年龄分布表</h1>
+      <table>
+        <colgroup>
+          <col width="20%" />
+          <col width="20%" />
+          <col width="20%" />
+          <col width="20%" />
+          <col width="20%" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th>年份</th>
+            <th>没过生日的周岁</th>
+            <th>过了生日的周岁</th>
+            <th>虚岁</th>
+            <th>生肖</th>
+          </tr>
+        </thead>
+        <tbody v-clock>
+          <tr v-for="(item,index) of this.yearArr" key="index">
+            <td>{{item}}</td>
+            <td>{{year-item-1}}</td>
+            <td>{{year-item}}</td>
+            <td>{{year-item+1}}</td>
+            <td>{{getanimal(item)}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+  <script src="./js/resize.js"></script>
+  <script src="./js/index.js"></script>
+</html>
